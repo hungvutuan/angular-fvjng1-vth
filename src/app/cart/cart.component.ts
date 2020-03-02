@@ -19,7 +19,7 @@ export class CartComponent implements OnInit {
     this.checkoutForm = this.formBuilder.group({
       name: '',
       address: '',
-    })
+    });
    }
 
   ngOnInit() {
@@ -30,7 +30,7 @@ export class CartComponent implements OnInit {
     //process checkout data here
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
-  }
-
-  console.warn("Order submitted", customerData);
+   
+    console.warn("Order submitted", customerData);
+  } 
 }
