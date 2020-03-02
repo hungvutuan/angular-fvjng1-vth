@@ -23,7 +23,7 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   addToCart(product){       //this method is local
-    this.cartService.addToCart(product); //this method is from cart.service
+    this.cartService.addToCart(product); //this method is from 
     window.alert("Added to cart!");
   }
 
